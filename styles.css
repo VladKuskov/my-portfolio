@@ -1,0 +1,94 @@
+body {
+    padding: 160px 20px 0 50px;
+    background-color: white;
+    color: black;
+    font-family: "Courier New", Courier, monospace;
+    max-width: 600px;
+    margin: 20px auto;
+    
+  }
+  
+  h1 {
+    font-size: 2em;
+    padding-bottom: 10px;
+    box-shadow: inset 0 -1px 0 0 rgba(0,0,0,0.2);
+
+  }
+
+  #top-nav {
+    position: fixed;        /* Fixes nav relative to viewport */
+    top: 40px;              /* 20px from top of window */
+    right: 60px;            /* 20px from right edge */
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 4px;              /* Space between buttons */
+    z-index: 1000;          /* Make sure nav is on top */
+  }
+  
+  .nav-btn {
+    background: none;       /* No background */
+    border: none;           /* No border */
+    padding: 0;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1.15rem;
+    color: black;
+    cursor: pointer;
+    text-align: right;
+    transition: opacity 0.3s ease;
+  }
+  
+  .nav-btn:hover {
+    opacity: 0.4;           /* Dim on hover */
+  }
+
+  .nav-btn.active {
+    font-weight: bold;
+    text-decoration: underline;
+    opacity: 1 !important;
+  }
+
+  section {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    height: 0;
+    overflow: hidden;
+  }
+  
+  section.active {
+    opacity: 1;
+    height: auto; /* allow content to show */
+  }
+
+  /*BLOG SECTION*/
+  .post-card {
+    border: 1px solid black;
+    padding: 15px;
+    margin: 15px 0;
+    cursor: pointer;
+    background: #fafafa;
+    transition: background 0.3s ease;
+  }
+  
+  .post-card:hover {
+    background: #f0f0f0;
+  }
+  
+  .post-title {
+    margin: 0 0 5px 0;
+  }
+  
+  .post-date {
+    color: gray;
+    font-size: 0.85rem;
+  }
+  
+  .post-excerpt {
+    margin: 10px 0 0 0;
+  }
+  
+  .post-content {
+    margin-top: 10px;
+    font-style: italic;
+  }
+
+  
