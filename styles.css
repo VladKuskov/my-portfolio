@@ -103,8 +103,8 @@ body {
     body {
       font-size: 18px;   /* bigger base font */
       padding-left: 15px; /* less left padding */
-      padding-right: 15px; /* add right padding for balance */
-      max-width: 100%;
+      padding-right: 150px; /* add right padding for balance */
+      max-width: 90%;
     }
 
     #top-nav {
@@ -112,6 +112,7 @@ body {
       right: 15px;
       gap: 10px; /* more space between buttons for fingers */
       flex-direction: column; /* keep vertical stacking */
+      max-width: 120px;
     }
 
   
@@ -125,7 +126,7 @@ body {
     }
   
     .nav-btn {
-      font-size: 1.5rem; /* bigger nav buttons for tap targets */
-      padding: 10px 15px; /* more padding to make buttons easier to tap */
+      font-size: 1rem; /* bigger nav buttons for tap targets */
+      padding: 6px 8px; /* more padding to make buttons easier to tap */
     }
   }
