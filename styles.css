@@ -47,12 +47,15 @@ body {
   
   .nav-btn:hover {
     opacity: 0.4;           /* Dim on hover */
+    color: #0070f3;
+    transition: color 0.3s ease, opacity 0.3s ease;
   }
 
   .nav-btn.active {
     font-weight: bold;
     text-decoration: underline;
     opacity: 1 !important;
+    color: #007ACC;
   }
 
   section {
@@ -104,7 +107,7 @@ body {
       font-size: 18px;   /* bigger base font */
       padding-left: 15px; /* less left padding */
       padding-right: 15px; /* add right padding for balance */
-      padding-top: 60px;
+      padding-top: 180px;
       max-width: 100%;
     }
 
