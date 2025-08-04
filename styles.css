@@ -21,7 +21,7 @@ body {
     right: 60px;            /* 20px from right edge */
     display: flex;
     flex-direction: column; /* Stack buttons vertically */
-    gap: 4px;              /* Space between buttons */
+    gap: 8px;              /* Space between buttons */
     z-index: 1000;          /* Make sure nav is on top */
   }
   
@@ -91,4 +91,31 @@ body {
     font-style: italic;
   }
 
+  @media (max-width: 600px) {
+    body {
+      font-size: 18px;   /* bigger base font */
+      padding-left: 15px; /* less left padding */
+      padding-right: 15px; /* add right padding for balance */
+    }
+
+    #top-nav {
+      top: 20px;
+      right: 15px;
+      gap: 10px; /* more space between buttons for fingers */
+      flex-direction: column; /* keep vertical stacking */
+    }
+    
   
+    h1 {
+      font-size: 1.8rem; /* bigger headings */
+    }
+  
+    p, small {
+      font-size: 1.1rem; /* readable paragraphs and dates */
+    }
+  
+    .nav-btn {
+      font-size: 1.4rem; /* bigger nav buttons for tap targets */
+      padding: 10px 15px; /* more padding to make buttons easier to tap */
+    }
+  }
