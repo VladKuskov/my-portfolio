@@ -103,19 +103,32 @@ body {
     body {
       font-size: 18px;   /* bigger base font */
       padding-left: 15px; /* less left padding */
-      padding-right: 150px; /* add right padding for balance */
+      padding-right: 15px; /* add right padding for balance */
+      padding-top: 60px;
       max-width: 100%;
     }
 
     #top-nav {
-      top: 20px;
-      right: 15px;
-      gap: 10px; /* more space between buttons for fingers */
-      flex-direction: column; /* keep vertical stacking */
-      max-width: 120px;
+      position: fixed;
+      top: 0; /* stick to very top */
+      right: 0;
+      left: 0;
+      display: flex;
+      flex-direction: row; /* horizontal layout */
+      justify-content: center; /* center nav buttons horizontally */
+      gap: 20px; /* space between buttons */
+      background: white; /* solid background so content doesn't show under nav */
+      padding: 10px 0;
+      z-index: 1000;
+      border-bottom: 1px solid #ddd; /* subtle separation */
+    }
+    
+    .nav-btn {
+      font-size: 1.1rem;
+      padding: 6px 10px;
+      text-align: center;
     }
 
-  
     h1 {
       font-size: 1.8rem; /* bigger headings */
     }
@@ -125,8 +138,4 @@ body {
       text-indent: 1em;
     }
   
-    .nav-btn {
-      font-size: 1rem; /* bigger nav buttons for tap targets */
-      padding: 6px 8px; /* more padding to make buttons easier to tap */
-    }
   }
