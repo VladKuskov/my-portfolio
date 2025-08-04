@@ -5,9 +5,17 @@ body {
     font-family: "Courier New", Courier, monospace;
     max-width: 600px;
     margin: 20px auto;
+    font-size: 16px;
+    line-height: 1.5;
     
   }
   
+  p, small {
+    margin-left: 0;
+    text-indent: 1.2em;
+    line-height: 1.6;
+  }
+
   h1 {
     font-size: 2em;
     padding-bottom: 10px;
@@ -96,6 +104,7 @@ body {
       font-size: 18px;   /* bigger base font */
       padding-left: 15px; /* less left padding */
       padding-right: 15px; /* add right padding for balance */
+      max-width: 100%;
     }
 
     #top-nav {
@@ -104,7 +113,7 @@ body {
       gap: 10px; /* more space between buttons for fingers */
       flex-direction: column; /* keep vertical stacking */
     }
-    
+
   
     h1 {
       font-size: 1.8rem; /* bigger headings */
@@ -112,10 +121,11 @@ body {
   
     p, small {
       font-size: 1.1rem; /* readable paragraphs and dates */
+      text-indent: 1em;
     }
   
     .nav-btn {
-      font-size: 1.4rem; /* bigger nav buttons for tap targets */
+      font-size: 1.5rem; /* bigger nav buttons for tap targets */
       padding: 10px 15px; /* more padding to make buttons easier to tap */
     }
   }
